@@ -1,8 +1,8 @@
 import Banner from '@/components/ui/Banner'
 import FeaturedCategory from '@/components/ui/FeaturedCategory'
-import Products from '@/components/ui/Products'
 import RightSideBannerPart from '@/components/ui/RightSideBannerPart'
 import React from 'react'
+import AllProducts from '@/components/ui/AllProducts'
 
 const HomePage = ({ allProducts }) => {
 
@@ -20,7 +20,7 @@ const HomePage = ({ allProducts }) => {
         </div>
       </div>
       <FeaturedCategory />
-      <Products allProducts={allProducts} />
+      <AllProducts allProducts={allProducts} />
     </div>
   )
 }

@@ -1,8 +1,8 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
-const Products = ({ allProducts }) => {
-    // console.log(allProducts)
+const AllProducts = ({ allProducts }) => {
     return (
         <div>
             Featured Product
@@ -24,7 +24,7 @@ const Products = ({ allProducts }) => {
                             <div className="card-actions justify-end">
                                 <div className="badge badge-outline">status:{product?.status}</div>
                                 <div className="badge badge-outline">Price:{product?.price}</div>
-                                <button className="btn btn-primary">View details</button>
+                                <Link href={`/products/${product?.id}`}>  <button className="btn btn-primary">View details</button></Link>
                             </div>
                         </div>
                     </div></>)
@@ -36,4 +36,4 @@ const Products = ({ allProducts }) => {
     )
 }
 
-export default Products
+export default AllProducts
