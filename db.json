@@ -1,0 +1,84 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "title": "Intel 10th Gen Core i3 10100F Processor",
+            "description": "This processor comes with a new breed that come without an integrated GPU, so a separate graphics card is required for its functionality. This new 10th gen Comet Lake microarchitecture is manufactured with the 14nm process that comes with four cores but lacks in HyperThreading. As this chip is updated to the latest BIOS revision, it nicely fits into any Intel 300-series motherboard. Focusing on this, all the major motherboard manufacturers have already started BIOS updates for their 300-series lineupIntel 10th Generation Core i3-10100F Processor having the base frequency of 3.60 GHz that can be reached as max turbo frequency at 4.30 GHz. It has the L3 SmartCache of 6 MB containing 4 cores and 8 threads. With the bus speed of 8 GT/s DMI3, it has thermal design power (TDP) rating of 65W. This latest microchip has few expansion options such 3.0 PCI express revision having configured up to 1x16, 2x8, 1x8+2x4 and maximum 16 lanes. Considering the memory this processor has dual channel of max 128 GB of size that supports up to DDR4-2666 bus speed.",
+            "status": "In Stock",
+            "rating": "5",
+            "category": "CPU",
+            "price": 8400,
+            "image_url": "/images/cpu.png"
+        },
+        {
+            "id": "2",
+            "title": "1STPlayer PS-600AX Bronze Full Modular Power Supply",
+            "description": "1STPlayer PS-600AX Bronze Full Modular Power Supply is a 80 PLUS Bronze rated power supply, it has an upgraded performance with more powerful features. The DK 6.0 Full modular power supply gives maximum output capacity of 600W rated power and included with 12CM cooling fan , flat cable and full voltage output. The PS-600AX Power supply works with AC input power of 100-240V, with 47-63Hz frequency and 6.0A Max current capacity. With full range voltage and SCP function, when the power is cut off under abnormal condition. DK 5.0 will activate the power protection function to protect the PSU and motherboard effectively.1STPlayer PS-600AX Bronze Full Modular Power Supply comes with a modular design that can issue cable when upgrading GPU, multiple hard drives and case fans. Also, you can add/remove cable as their demand. Moreover, full modular design delivers a convenient cable management. Users can save space with flat cable that results in a nice-looking back routing.",
+            "status": "In Stock",
+            "rating": "3.6",
+            "category": "Power Supply Unit",
+            "price": 4700,
+            "image_url": "/images/power.png"
+        },
+        {
+            "id": "3",
+            "title": "ASRock H81M-VG4 R4.0 4th Gen Micro ATX Motherboard",
+            "description": "The ASRock H81M-VG4 R4.0 4th Gen Micro ATX Motherboard supports Intel 4th Generation Intel Core Processors (Socket 1150) and Dual Channel DDR3 1600. The Motherboard comes with 1 PCIe 2.0 x16, 1 PCIe 2.0 x1. It features a D-Sub port for graphic output. It is built with a High-Density Glass Fabric PCB design that reduces the gaps between the PCB layers to protect the motherboard against electrical shorts caused by humidity. This ASRock motherboard uses a Realtek gigabit LAN chip to support extremely fast internet connections. The ASRock H81M-VG4 R4.0 features a solid capacitor design. The motherboard offers full spike protection. It includes various technologies to prevent your motherboard’s components from being damaged by these unexpected voltage spikes. It also comes with ASRock Live Update & APP Shop. The ASRock H81M-VG4 R4.0 comes with 3 years of warranty.",
+            "status": "In Stock",
+            "rating": "4.5",
+            "category": "Motherboard",
+            "price": 8000,
+            "image_url": "/images/mo.png"
+        },
+        {
+            "id": "4",
+            "title": "HP EX900 M.2 1TB PCIe NVMe Internal SSD",
+            "description": "Revolutionize large file handling and response times with HP PCIe NVME TLC 1TB SSD M.2 Drive, a remarkably affordable and innovative PCIe-based NVMe memory SSD storage solution.Streamline your workflows Tackle large files and reduce your work time from hours to minutes with a solid state drive powered by M.2 PCIe NVMe technology.Budget-conscious innovation Access affordable high performance with a triple layer (TLC) architecture that stacks three cell layers on top of one another.",
+            "status": "Out of Stock",
+            "rating": "4.3",
+            "category": "Storage Device",
+            "price": 5320,
+            "image_url": "/images/ssd.png"
+        },
+         {
+            "id": "5",
+            "title": "Acer EB192Q 18.5 Inch HD Monitor",
+            "description": "Acer EB192Q Monitor comes with 18.5 Inch (1366x768) HD Backlit LED LCD Display. The Acer EB192Q featured this Comfy View display which prevents reflections to provide greater eye comfort and also on this LED-backlit display with the fine details with this full HD resolution. Here used LED technology and uses less energy, delivering up to 68% power savings. The horizontal viewing angle is 95 degrees while the vertical viewing angle is 65 degrees, Colour Support: 16.7 Million Colours, Panel Technology: Twisted Nematic Film (TN Film). This Acer EB192Q Monitor featured 95 degrees Horizontal Viewing Angle, 65 degrees Vertical Viewing Angle, TN Panel Technology, and -5 to 25 degrees Tilt Angle. The high resolution, rapid response time, and superior contrast ratio of this monitor make this series ideal for viewing heavy-duty media applications and movies with detailed precision and crisp images. In this Acer monitor, the Mercury-free LED backlight technology guarantees safe usage and environmental care. Here, LED technology also uses less energy and delivers up to 68% power savings. The latest Acer EB192Q Monitor offers 03 years warranty.",
+            "status": "In Stock",
+            "rating": "5",
+            "category": "Monitor",
+            "price": 8399,
+            "image_url": "/images/pc.png"
+        },
+         {
+            "id": "6",
+            "title": "Logitech B100 Optical USB Mouse",
+            "description": "Logitech B100 Optical USB MouseAn office basic with built-in quality.-- Comfort in hand Left-handed or right, you can work comfortably all day long with this ambidextrous mouse.Smooth operator Youâ€™re in control with smooth, responsive optical tracking that moves the cursor just where you want it.Ready in no time This plug-and-play mouse is simple to set upâ€”you just plug it in to your USB and get back to business.03 Years Warranty",
+            "rating": "5",
+            "status": "In Stock",
+            "category": "Mouse",
+            "price": 390,
+            "image_url": "/images/mouse.png"
+        },
+         {
+            "id": "7",
+            "title": "New Study Reveals Benefits of Regular Exercise",
+            "description": "ADATA DDR4 module provides the highest quality and the fastest performance. The Premier DDR4 3200 SO-DIMM memory modules for notebooks arrive in convenient 16GB for instant upgrades on any compatible notebook. They deliver faster data transfers than DDR3, coupled with lower energy consumption that reduces heat and extends battery life. Our DDR4 is also optimized to unlock the power of the newest Intel/AMD processors.",
+            "status": "Out of Stock",
+            "rating": "5",
+            "category": "RAM",
+            "price": 9100,
+            "image_url": "/images/ram.png"
+        },
+         {
+            "id": "8",
+            "title": "Fantech MAXFIT87 MK856 Red Switch RGB Mechanical Keyboard",
+            "description": "Fantech MAXFIT87 MK856 RGB Mechanical Keyboard comes with Red Switch, TKL Factor + media keys, Side Panel RGB, Detachable Type-C Cable RGB Backlighting. This Mechanical keybord featured with Switch Lifetime: 50 million clicks, Total Keys: 87, Anti-ghosting: Full keys, 22 modes Illumination RGB, that enhance your gaming experience. This Keyboard will Truly lighten up your gaming with MAXFIT87â€™s side panel RGB and Illuminate your desk. It is designed with Keycaps: Double-injection, Core Construction: ABS Plastic, Polling Rate: 1000Hz, Weight: 794gr without cable, To ensures that every single key you press registers simultaneously and accurately in-game. The MAXFIT87 Mechanical Keyboard features full featured keys at a streamlined size, perfect for anyone who wants to easily access any key or command on-the-fly while keeping their desk space. Including 4 additional media keys for even more accessibility. This new Fantech MAXFIT87 MK856 compatible with Windows and Mac OS X operating system and USB Port Required. This Lastest stylish Fantech MAXFIT87 MK856 has 01 year warranty.",
+            "status": "Out of Stock",
+            "rating": "4.5",
+            "category": "Keyboard",
+            "price": 3895,
+            "image_url": "/images/keyboard.png"
+        }
+    ]
+}
