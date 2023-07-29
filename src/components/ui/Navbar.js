@@ -48,9 +48,9 @@ const Navbar = () => {
             </div>
 
         </div>
-            <div className="navbar-center hidden lg:flex justify-between shadow-lg shadow-indigo-500/40">
+            <div className="navbar-center hidden lg:flex justify-between shadow-lg shadow-[#bce3d6]">
                 <ul className="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
+                    <li><Link href='/'>Home</Link></li>
 
                     <li tabIndex={0}>
                         <details>

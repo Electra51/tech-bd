@@ -7,8 +7,8 @@ const Banner = () => {
             <div className="hero-content text-center text-neutral-content">
                 <div className="max-w-md">
                     <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-                    <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button className="btn btn-primary">Get Started</button>
+                    <p className="mb-5">Build Your Custom PC or Intel Gaming PC from Tech bd PC Builder. Visit Tech bd  shop or Order Online to get delivery Anywhere in BD.</p>
+                    <button className="btn" style={{ background: '#32BD8F', color: 'white' }}>Get Started</button>
                 </div>
             </div>
         </div>

@@ -13,9 +13,9 @@ const HomePage = ({ allProducts }) => {
 
   return (
     <div className='container-xl p-4 '>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 sm:grid-cols-1 gap-4">
 
-        <div className="col-span-3 ..." >
+        <div className="col-span-3 sm:col-span-1 lg:col-span-3 md:col-span-1 ..." >
           <Banner></Banner>
         </div>
         <div className="...">
