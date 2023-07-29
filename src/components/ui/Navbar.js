@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import { MdAccountCircle } from 'react-icons/md';
-import { useSession, signOut } from "next-auth/react"
+import { useSession, signOut } from "next-auth/react";
 const Navbar = () => {
     const { data: session } = useSession()
     console.log('hi', session)

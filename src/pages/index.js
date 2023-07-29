@@ -9,7 +9,7 @@ import { useGetProductsQuery } from '@/redux/api/api'
 const HomePage = ({ allProducts }) => {
 
   const { data, isLoading, isError, error } = useGetProductsQuery();
-  // console.log(data);
+
 
   return (
     <div className='container-xl p-4 '>

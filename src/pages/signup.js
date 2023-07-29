@@ -1,14 +1,18 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-import React from 'react'
-import { useForm, } from 'react-hook-form';
+import React, { useState, useEffect } from 'react'
+import { useForm, useWatch } from 'react-hook-form';
 import style from '../styles/login.module.css'
 import { signIn } from 'next-auth/react';
 import RootLayouts from '@/components/layouts/RootLayouts';
 import auth from '@/firebase/firebase.auth.js';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import Link from 'next/link';
-const LoginPage = () => {
+import { useRouter } from 'next/router';
+const SignupPage = () => {
+    const [disabled, setDisabled] = useState(true);
+    const router = useRouter();
+
 
     const [
         createUserWithEmailAndPassword,
@@ -16,20 +20,37 @@ const LoginPage = () => {
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth);
- 
+    console.log(user)
     const {
         register,
-        handleSubmit,
+        handleSubmit, control,
         formState: { errors },
         // eslint-disable-next-line react-hooks/rules-of-hooks
     } = useForm();
 
 
-    const onSubmit = (data) => {
-        createUserWithEmailAndPassword(data.email, data.password);
+    const password = useWatch({ control, name: "password" });
+    const confirmPassword = useWatch({ control, name: "confirmPassword" });
+    useEffect(() => {
+        if (password !== undefined && password !== "" && confirmPassword !== undefined && confirmPassword !== "" && password === confirmPassword
+        ) {
+            setDisabled(false);
+        } else {
+            setDisabled(true)
+        }
+    }, [password, confirmPassword]);
+    // const onSubmit = (data) => {
+    //     createUserWithEmailAndPassword(data.email, data.password);
 
-    }
-
+    // }
+    const onSubmit = async ({ email, password }) => {
+        try {
+            await createUserWithEmailAndPassword(email, password);
+            router.push('/');
+        } catch (error) {
+            console.log(error.message);
+        }
+    };
 
 
     return (
@@ -44,7 +65,7 @@ const LoginPage = () => {
                     <div className="relative flex flex-col justify-center min-h-screen overflow-hidden">
                         <div className="w-full p-6 m-auto bg-white rounded-md border lg:max-w-xl">
                             <h1 className="text-3xl font-semibold text-center text-[#32BD8F] uppercase">
-                                Log In
+                                Sign Up
                             </h1>
                             <form onSubmit={handleSubmit(onSubmit)} className="mt-6">
                                 <div className="mb-2">
@@ -83,15 +104,27 @@ const LoginPage = () => {
                                     {/* {errors.password && <p role="alert">{errors.password?.message}</p>} */}
 
                                 </div>
-                                <a
-                                    href="#"
-                                    className="text-xs text-[#32BD8F] hover:underline"
-                                >
-                                    Forget Password?
-                                </a>
+                                <div className="mb-2">
+                                    <label
+                                        htmlFor="password"
+                                        className="block text-sm font-semibold text-gray-800"
+                                    >
+                                        Confirm Password
+                                    </label>
+                                    <input
+                                        name='confirmPassword'
+                                        {...register('confirmPassword', { required: 'confirmPassword is required' })}
+                                        type="password"
+                                        className="block w-full px-4 py-2 mt-2 text-[#32BD8F] bg-white border rounded-md focus:border-[#EBFBF5] focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                                    />
+
+                                    {errors.confirmPassword && <p role="alert">{errors.confirmPassword?.message}</p>}
+
+                                </div>
+
                                 <div className="mt-6" >
-                                    <button type="submit" className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-[#32BD8F] rounded-md hover:bg-[#32BD8F] focus:outline-none focus:bg-[#21ad7e]">
-                                        Login
+                                    <button type="submit" disabled={disabled} className={disabled ? 'w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-[#73827d] rounded-md hover:bg-[#637c74] focus:outline-none focus:bg-[#21ad7e]"' : "w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-[#32BD8F] rounded-md hover:bg-[#32BD8F] focus:outline-none focus:bg-[#21ad7e]"}>
+                                        Sign Up
                                     </button>
                                 </div>
                             </form>
@@ -129,12 +162,12 @@ const LoginPage = () => {
                             </div>
 
                             <p className="mt-8 text-xs font-light text-center text-gray-700">
-                                {" "}
-                                Do not have an account?{" "}
-                                <Link href='/signup'
+
+                                have an account?
+                                <Link href='/login'
                                     className="font-medium text-[#32BD8F] hover:underline"
                                 >
-                                    Sign up
+                                    Log In
                                 </Link>
                             </p>
                         </div>
@@ -148,8 +181,8 @@ const LoginPage = () => {
     )
 }
 
-export default LoginPage;
+export default SignupPage;
 
-LoginPage.getLayout = function getLayout(page) {
+SignupPage.getLayout = function getLayout(page) {
     return <RootLayouts>{page}</RootLayouts>;
 };
