@@ -1,3 +1,4 @@
+import RootLayouts from '@/components/layouts/RootLayouts';
 import Image from 'next/image';
 import React from 'react'
 
@@ -33,6 +34,10 @@ const ProductDetailPage = ({ productsData }) => {
 }
 export default ProductDetailPage;
 
+
+ProductDetailPage.getLayout = function getLayout(page) {
+    return <RootLayouts>{page}</RootLayouts>;
+};
 
 export const getStaticPaths = async () => {
     const res = await fetch("http://localhost:5000/products");

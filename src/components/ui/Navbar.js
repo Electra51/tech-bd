@@ -1,8 +1,13 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import { MdAccountCircle } from 'react-icons/md';
+import { useSession, signOut } from "next-auth/react"
 const Navbar = () => {
+    const { data: session } = useSession()
+    console.log('hi', session)
     return (
-        <div>   <div className="navbar bg-red-500">
+        <div>   <div className="navbar bg-[#32BD8F]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -35,15 +40,15 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <Link href='/' className="btn btn-ghost normal-case text-xl">Tech-BD</Link>
+                <Link href='/' className="text-[#3a3768] font-bold text-xl">Tech-BD</Link>
             </div>
 
             <div className="navbar-end">
-                <Link href='/pc_builder' className="btn">PC Builder</Link>
+                <Link href='/pc_builder' className="btn" style={{ background: '#3a3768', color: 'white' }}>PC Builder</Link>
             </div>
 
         </div>
-            <div className="navbar-center hidden lg:flex justify-between shadow-lg shadow-indigo-500/40 ">
+            <div className="navbar-center hidden lg:flex justify-between shadow-lg shadow-indigo-500/40">
                 <ul className="menu menu-horizontal px-1">
                     <li><a>Home</a></li>
 
@@ -78,17 +83,37 @@ const Navbar = () => {
                         </div>
                     </label>
                     <div className="dropdown dropdown-end">
-                        <button className='btn btn-sm btn-outline flex align-middle justify-center items-center gap-1'>  <MdAccountCircle /> Account</button>
-                        <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-                            <li>
-                                <a className="justify-between">
-                                    Login
+                        {session?.user ? <> <button className='flex align-middle justify-center items-center gap-1'> <div className="avatar">
+                            <div className="w-8 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                <img src={session?.user.image} />
+                            </div>
+                        </div></button>
+                            <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                                <li>
+                                    <Link href='/profile' className="justify-between">
+                                        Profile
 
-                                </a>
-                            </li>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href='/login' onClick={() => signOut()} className="justify-between">
+                                        Log Out
+
+                                    </Link>
+                                </li>
 
 
-                        </ul>
+                            </ul></> : <> <button className='btn btn-sm btn-outline flex align-middle justify-center items-center gap-1'>  <MdAccountCircle /> Account</button>
+                            <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                                <li>
+                                    <Link href='/login' className="justify-between">
+                                        Login
+
+                                    </Link>
+                                </li>
+
+
+                            </ul></>}
                     </div>
                 </ul>
             </div></div>

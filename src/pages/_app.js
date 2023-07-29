@@ -1,9 +1,20 @@
-import Footer from '@/components/ui/Footer'
-import Navbar from '@/components/ui/Navbar'
-import '@/styles/globals.css'
 
-export default function App({ Component, pageProps }) {
+import { store } from '@/redux/store';
+import '@/styles/globals.css'
+import { Provider } from 'react-redux';
+import { SessionProvider } from "next-auth/react"
+
+
+
+
+
+export default function App({ Component, pageProps: { session, ...pageProps } }) {
+  const getLayout = Component.getLayout || ((page) => page);
+
   return (
-    <><Navbar /><Component {...pageProps} /><Footer /></>
-  )
+    <SessionProvider session={session}>
+      <Provider store={store}>{getLayout(<Component {...pageProps} />)}</Provider>
+    </SessionProvider>
+
+  );
 }

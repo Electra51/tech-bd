@@ -3,8 +3,13 @@ import FeaturedCategory from '@/components/ui/FeaturedCategory'
 import RightSideBannerPart from '@/components/ui/RightSideBannerPart'
 import React from 'react'
 import AllProducts from '@/components/ui/AllProducts'
+import RootLayouts from '@/components/layouts/RootLayouts'
+import { useGetProductsQuery } from '@/redux/api/api'
 
 const HomePage = ({ allProducts }) => {
+
+  const { data, isLoading, isError, error } = useGetProductsQuery();
+  // console.log(data);
 
   return (
     <div className='container-xl p-4 '>
@@ -26,6 +31,10 @@ const HomePage = ({ allProducts }) => {
 }
 
 export default HomePage;
+
+HomePage.getLayout = function getLayout(page) {
+  return <RootLayouts>{page}</RootLayouts>;
+};
 
 export const getStaticProps = async () => {
   const res = await fetch("http://localhost:5000/products");
