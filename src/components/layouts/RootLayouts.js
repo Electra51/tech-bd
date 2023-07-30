@@ -6,10 +6,9 @@ const RootLayouts = ({ children }) => {
     return (
         <>
             <Navbar />
-
             {children}
             <Footer /></>
     )
 }
 
-export default RootLayouts
+export default RootLayouts;

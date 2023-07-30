@@ -16,7 +16,7 @@ const LoginPage = () => {
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth);
- 
+
     const {
         register,
         handleSubmit,
@@ -24,10 +24,8 @@ const LoginPage = () => {
         // eslint-disable-next-line react-hooks/rules-of-hooks
     } = useForm();
 
-
     const onSubmit = (data) => {
         createUserWithEmailAndPassword(data.email, data.password);
-
     }
 
 
@@ -71,10 +69,6 @@ const LoginPage = () => {
                                         name='password'
                                         {...register("password", {
                                             required: "this is a required",
-                                            // maxLength: {
-                                            //     value: 2,
-                                            //     message: "Max length is 5"
-                                            // }
                                         })}
                                         type="password"
                                         className="block w-full px-4 py-2 mt-2 text-[#32BD8F] bg-white border rounded-md focus:border-[#EBFBF5] focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"

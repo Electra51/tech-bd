@@ -1,5 +1,4 @@
-
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore, createSlice } from "@reduxjs/toolkit";
 import { apiSlice } from "./api/api";
 // import { apiSlice } from "./api/api";
 
@@ -9,12 +8,27 @@ import { apiSlice } from "./api/api";
 //         getDefaultMiddleware().concat(apiSlice.middleware),
 // });
 
-export const store = configureStore({
-    reducer: {
-        [apiSlice.reducerPath]: apiSlice.reducer
+const initialState = [];
+
+const productSlice = createSlice({
+  name: "products",
+  initialState,
+  reducers: {
+    addToBuilder: (state, action) => {
+      state.push(action.payload);
+      console.log("state", action.payload);
     },
-    middleware: (getDefaultMiddleware) =>
-        getDefaultMiddleware().concat(apiSlice.middleware),
+  },
+});
+export const { addToBuilder } = productSlice.actions;
+
+export const store = configureStore({
+  reducer: {
+    [apiSlice.reducerPath]: apiSlice.reducer,
+    products: productSlice.reducer,
+  },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(apiSlice.middleware),
 });
 
 // export type RootStat = ReturnType<typeof store.getState>;

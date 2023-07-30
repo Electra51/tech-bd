@@ -40,7 +40,7 @@ const RightSideBannerPart = () => {
         const hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((time % (1000 * 60)) / 1000);
-        return `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        return <>{`${days}d ${hours}h ${minutes}m ${seconds}s`}</>;
     };
     return (
         <div>
@@ -63,7 +63,7 @@ const RightSideBannerPart = () => {
                     <p>offer has ended!</p>
                 )}</div>
                 <div className='absolute top-16 left-0 z-10'>
-                    <p className='font-bold text-2xl text-white bg-rose-500 mt-2 p-2'> {offer.discountPercentage}%</p>
+                    <p className='font-bold text-2xl text-white bg-rose-500 mt-2 p-2'> {offer.discountPercentage}% off</p>
 
                 </div>
 
