@@ -62,19 +62,41 @@ const Navbar = () => {
                 <Link href="/products">All Products</Link>
               </li>
               <li>
-                <a href="#featured">Featured</a>
+                <Link href="/">Featured</Link>
               </li>
               <li>
                 <Link href="/contact">Contact</Link>
               </li>
               <li>
-                <a>
+                {session?.user ? <div className="avatar">
+                  <div className="w-8 rounded-full">
+                    <img src={session?.user.image} />
+                    {session?.user?.email}
+                  </div>
+                </div> : <a>
                   <MdAccountCircle /> Account
-                </a>
+                </a>}
+
                 <ul className="p-2">
-                  <li>
-                    <a>Login</a>
-                  </li>
+                  {
+                    session?.user ? <> <li>
+                      <Link href="/profile" className="justify-between">
+                        Profile
+                      </Link>
+                    </li>
+                      <li>
+                        <Link
+                          href="/login"
+                          onClick={() => signOut()}
+                          className="justify-between"
+                        >
+                          Log Out
+                        </Link>
+                      </li></> : <li>
+                      <Link href='/login'>Login</Link>
+                    </li>
+                  }
+
                 </ul>
               </li>
             </ul>
@@ -103,31 +125,30 @@ const Navbar = () => {
           <li tabIndex={0}>
             <details>
               <summary>Categories</summary>
-              <ul className=" flex " style={{ zIndex: "1" }}>
-                <div>
-                  {" "}
-                  <li>
-                    <Link href="/categories/cpu">CPU / Processor</Link>
-                  </li>
-                  <li>
-                    <Link href="/categories/motherboard">MotherBoard</Link>
-                  </li>
-                  <li>
-                    <Link href="/categories/ram">RAM</Link>
-                  </li>
-                  <li>
-                    <Link href="categories/psu">Power Supply Unit</Link>
-                  </li>
-                </div>
-                <div>
-                  {" "}
-                  <li>
-                    <Link href="categories/storage">Storage Device</Link>
-                  </li>
-                  <li>
-                    <Link href="/categories/monitor">Monitor</Link>
-                  </li>
-                </div>
+              <ul style={{ zIndex: "1", width: '30vh', borderRadius: '0px' }}>
+
+                <li >
+                  <Link href="/categories/cpu">CPU / Processor</Link>
+                </li>
+                <li>
+                  <Link href="/categories/motherboard">MotherBoard</Link>
+                </li>
+                <li>
+                  <Link href="/categories/ram">RAM</Link>
+                </li>
+                <li>
+                  <Link href="categories/psu">Power Supply Unit</Link>
+                </li>
+
+
+                {" "}
+                <li>
+                  <Link href="categories/storage">Storage Device</Link>
+                </li>
+                <li>
+                  <Link href="/categories/monitor">Monitor</Link>
+                </li>
+
               </ul>
             </details>
           </li>
@@ -135,7 +156,7 @@ const Navbar = () => {
             <Link href="/products">All Products</Link>
           </li>
           <li>
-            <a href="#featured">Featured</a>
+            <Link href="/">Featured</Link>
           </li>
           <li>
             <Link href="/contact">Contact</Link>
@@ -174,12 +195,12 @@ const Navbar = () => {
                 <button className="flex align-middle justify-center items-center gap-1">
                   {" "}
                   <div className="avatar">
-                    <div className="w-8 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                    <div className="w-8 rounded-full">
                       <img src={session?.user.image} />
                     </div>
                   </div>
                 </button>
-                <ul
+                <ul style={{ zIndex: "999" }}
                   tabIndex={0}
                   className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
                 >

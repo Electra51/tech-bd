@@ -20,11 +20,11 @@ const FeaturedCategory = ({ uniqueCategories }) => {
         Featured Category
       </h2>
       <div className="overflow-hidden">
-        <div class="gap-16 sm:columns-2 lg:columns-6 md:columns-3 ...">
+        <div className="gap-16 sm:columns-2 lg:columns-6 md:columns-3 ...">
           {uniqueCategories?.map((item) => (
             <>
               {" "}
-              <div className="border cursor-pointer">
+              <div className="border cursor-pointer" key={item.id}>
                 <Link href={`/categories/${item.id}`}>
                   <figure className="px-10 pt-10">
                     <Image

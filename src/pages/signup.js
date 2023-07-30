@@ -67,7 +67,7 @@ const SignupPage = () => {
                   >
                     Email
                   </label>
-                  <input
+                  <input disabled
                     {...register("email", { required: true })}
                     type="email"
                     name="email"
@@ -82,7 +82,7 @@ const SignupPage = () => {
                   >
                     Password
                   </label>
-                  <input
+                  <input disabled
                     name="password"
                     {...register("password", {
                       required: "this is a required",
@@ -101,7 +101,7 @@ const SignupPage = () => {
                   >
                     Confirm Password
                   </label>
-                  <input
+                  <input disabled
                     name="confirmPassword"
                     {...register("confirmPassword", {
                       required: "confirmPassword is required",

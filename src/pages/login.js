@@ -52,7 +52,7 @@ const LoginPage = () => {
                                     >
                                         Email
                                     </label>
-                                    <input {...register("email", { required: true })}
+                                    <input disabled {...register("email", { required: true })}
                                         type="email" name='email'
                                         className="block w-full px-4 py-2 mt-2 text-[#32BD8F] bg-white border rounded-md focus:border-[#EBFBF5] focus:ring-[#EBFBF5] focus:outline-none focus:ring focus:ring-opacity-40"
                                     />
@@ -65,7 +65,7 @@ const LoginPage = () => {
                                     >
                                         Password
                                     </label>
-                                    <input
+                                    <input disabled
                                         name='password'
                                         {...register("password", {
                                             required: "this is a required",

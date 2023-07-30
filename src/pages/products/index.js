@@ -10,7 +10,7 @@ const ProductsPage = ({ productsData }) => {
         {productsData?.map((product) => (
           <>
             {" "}
-            <div className="card  bg-base-100 rounded-none border">
+            <div className="card  bg-base-100 rounded-none border" key={product?._id}>
               <figure>
                 {" "}
                 <Image
@@ -37,7 +37,7 @@ const ProductsPage = ({ productsData }) => {
                     </div>
                   )}
                 </div>
-                <p>Category Name: {product?.category_name}</p>
+                <p>Category Name: {product?.category.charAt(0).toUpperCase() + product?.category.slice(1)}</p>
                 <p>
                   Price: <span className="font-bold">{product?.price}TK</span>
                 </p>
@@ -75,8 +75,9 @@ ProductsPage.getLayout = function getLayout(page) {
 };
 //ssg
 export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:3000/api/products");
+  const res = await fetch("http://localhost:3000/api/categories");
   const data = await res.json();
+  console.log(data)
 
   return {
     props: {

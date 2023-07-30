@@ -6,13 +6,12 @@ import React, { useEffect, useState } from "react";
 
 const ProductDetailPage = ({ product }) => {
   const router = useRouter();
-  //const [allproducts, setProducts] = useState();
   const { productId } = router.query;
 
   return (
     <div className="container-xl p-4 mt-8">
       {" "}
-      <div class="sm:columns-1 md:column-2 lg:columns-2 ">
+      <div className="sm:columns-1 md:column-2 lg:columns-2 ">
         <div>
           <Image
             src={product?.image_url}
@@ -24,7 +23,7 @@ const ProductDetailPage = ({ product }) => {
         <div>
           <h2 className="text-3xl mt-3 font-bold">{product?.product_name}</h2>
           <p className="text-xl mt-3 font-semibold">
-            Category: {product?.category}
+            Category: {product?.category.charAt(0).toUpperCase() + product?.category.slice(1)}
           </p>
           <p className="text-xl font-medium">Rating: {product?.rating}</p>
           <p className="text-xl font-medium">{product?.rating_icon}</p>
@@ -37,9 +36,11 @@ const ProductDetailPage = ({ product }) => {
 
           <p className="text-xl font-medium">Type: {product?.type}</p>
 
-          <p className="text-xl font-medium">Individual rating: 6</p>
-          <p className="text-xl font-medium">Average rating: 5</p>
-          <p className="text-xl font-medium">Review: {product?.product_name}</p>
+          <p className="text-xl font-medium">Individual rating: {product?.individual_rating
+          }</p>
+          <p className="text-xl font-medium">Average rating:{product?.average_rating
+          }</p>
+
         </div>
       </div>
       <div className="mt-8">
@@ -49,7 +50,7 @@ const ProductDetailPage = ({ product }) => {
       <div className="mt-5">
         <h2 className="text-xl font-bold">Reviews:</h2>
         {product?.reviews?.map((review) => (
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center" key={review.id}>
             {" "}
             <p>{review?.comment}</p>
             <div>
@@ -68,12 +69,9 @@ ProductDetailPage.getLayout = function getLayout(page) {
   return <RootLayouts>{page}</RootLayouts>;
 };
 
-// This function is necessary to pre-render the dynamic product pages
+
 export async function getServerSideProps({ params }) {
   const { productId } = params;
-
-  // Fetch the detailed product data using the productId here
-  // For demonstration purposes, we'll return dummy data based on productId
   const response = await fetch(
     `http://localhost:3000/api/categories?_id=${productId}`
   );

@@ -1,10 +1,10 @@
 import Banner from "@/components/ui/Banner";
-import FeaturedCategory from "@/components/ui/FeaturedCategory";
 import RightSideBannerPart from "@/components/ui/RightSideBannerPart";
 import React from "react";
 import AllProducts from "@/components/ui/AllProducts";
 import RootLayouts from "@/components/layouts/RootLayouts";
 import { useGetProductsQuery } from "@/redux/api/api";
+import dynamic from 'next/dynamic'
 
 const getRandomProducts = (data, count) => {
   const shuffledData = data.sort(() => 0.5 - Math.random());
@@ -24,6 +24,16 @@ const HomePage = ({ randomProducts, uniqueCategories }) => {
 
   const { data, isLoading, isError, error } = useGetProductsQuery();
 
+  const DynamicFeaturedCategory = dynamic(() => import('@/components/ui/FeaturedCategory'), {
+    loading: () => <p>Loading...</p>,
+    ssr: false,
+  })
+
+  const DynamicAllProducts = dynamic(() => import('@/components/ui/AllProducts'), {
+    loading: () => <p>Loading...</p>,
+    ssr: false,
+  })
+
   return (
     <div className="container-xl p-4 ">
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 sm:grid-cols-1 gap-4">
@@ -36,8 +46,8 @@ const HomePage = ({ randomProducts, uniqueCategories }) => {
           </div>
         </div>
       </div>
-      <FeaturedCategory uniqueCategories={uniqueCategories} />
-      <AllProducts randomProducts={randomProducts} />
+      <DynamicFeaturedCategory uniqueCategories={uniqueCategories} />
+      <DynamicAllProducts randomProducts={randomProducts} />
     </div>
   );
 };

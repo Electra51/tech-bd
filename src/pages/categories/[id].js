@@ -15,7 +15,7 @@ const CategoryIdPage = ({ products }) => {
         {products?.map((product) => (
           <>
             {" "}
-            <div className="card  bg-base-100 rounded-none border">
+            <div className="card  bg-base-100 rounded-none border" key={product?._id}>
               <figure>
                 {" "}
                 <Image
@@ -26,25 +26,13 @@ const CategoryIdPage = ({ products }) => {
                 />
               </figure>
               <div className="card-body">
-                <h2 className="card-title">{product?.title}</h2>
+                <h2 className="card-title">{product?.product_name}</h2>
                 <div className="flex justify-between">
                   <div className="flex">
-                    {" "}
-                    <div className="rating">
-                      <input
-                        type="radio"
-                        name="rating-2"
-                        className="mask mask-star-2 bg-orange-400"
-                      />
-                      <input
-                        type="radio"
-                        name="rating-2"
-                        className="mask mask-star-2 bg-orange-400"
-                      />
-                    </div>{" "}
+                    <p className="font-bold"> {product?.rating_icon}</p>
                     <p className="font-bold ms-2"> {product?.rating}</p>
                   </div>{" "}
-                  {product?.status == "Out of Stock" ? (
+                  {product?.status == "Out of stock" ? (
                     <div className="badge badge-error">
                       <p className="text-white"> {product?.status}</p>
                     </div>
@@ -54,7 +42,7 @@ const CategoryIdPage = ({ products }) => {
                     </div>
                   )}
                 </div>
-                <p>Category Name: {product?.category}</p>
+                <p>Category Name: {product?.category.charAt(0).toUpperCase() + product?.category.slice(1)}</p>
                 <p>
                   Price: <span className="font-bold">{product?.price}TK</span>
                 </p>
