@@ -94,7 +94,7 @@ const LoginPage = () => {
                             </div>
                             <div className="flex mt-4 gap-x-2">
                                 <button onClick={() => signIn('google', {
-                                    callbackUrl: 'http://localhost:3000/'
+                                    callbackUrl: 'https://tech-bd-electra51.vercel.app/'
                                 })}
                                     type="button"
                                     className="flex items-center justify-center w-full p-2 border border-[#32BD8F] rounded-md focus:ring-2 focus:ring-offset-1 focus:ring-[#32BD8F]"
@@ -108,7 +108,7 @@ const LoginPage = () => {
                                     </svg>
                                 </button>
                                 <button onClick={() => signIn('github', {
-                                    callbackUrl: 'http://localhost:3000/'
+                                    callbackUrl: 'https://tech-bd-electra51.vercel.app/'
                                 })} className="flex items-center justify-center w-full p-2 border border-[#32BD8F] rounded-md focus:ring-2 focus:ring-offset-1 focus:ring-[#32BD8F]">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"

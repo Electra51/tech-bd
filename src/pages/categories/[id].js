@@ -83,7 +83,7 @@ export async function getServerSideProps({ params }) {
   const { id } = params;
 
   const response = await fetch(
-    `http://localhost:3000/api/categories?category=${id}`
+    `https://tech-bd-electra51.vercel.app/api/categories?category=${id}`
   );
   const data = await response.json();
   const products = data.data;

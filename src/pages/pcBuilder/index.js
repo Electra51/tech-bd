@@ -102,7 +102,7 @@ PcBuilderPage.getLayout = function getLayout(page) {
 //ssr
 export async function getServerSideProps() {
   const response = await fetch(
-    `http://localhost:3000/api/categories?categories=1`
+    `https://tech-bd-electra51.vercel.app/api/categories?categories=1`
   );
   const data = await response.json();
   const categories = data.data;

@@ -4,7 +4,8 @@ import React from "react";
 import AllProducts from "@/components/ui/AllProducts";
 import RootLayouts from "@/components/layouts/RootLayouts";
 import { useGetProductsQuery } from "@/redux/api/api";
-import dynamic from 'next/dynamic'
+// import dynamic from 'next/dynamic'
+import FeaturedCategory from "@/components/ui/FeaturedCategory";
 
 const getRandomProducts = (data, count) => {
   const shuffledData = data.sort(() => 0.5 - Math.random());
@@ -24,15 +25,15 @@ const HomePage = ({ randomProducts, uniqueCategories }) => {
 
   const { data, isLoading, isError, error } = useGetProductsQuery();
 
-  const DynamicFeaturedCategory = dynamic(() => import('@/components/ui/FeaturedCategory'), {
-    loading: () => <p>Loading...</p>,
-    ssr: false,
-  })
+  // const DynamicFeaturedCategory = dynamic(() => import('@/components/ui/FeaturedCategory'), {
+  //   loading: () => <p>Loading...</p>,
+  //   ssr: false,
+  // })
 
-  const DynamicAllProducts = dynamic(() => import('@/components/ui/AllProducts'), {
-    loading: () => <p>Loading...</p>,
-    ssr: false,
-  })
+  // const DynamicAllProducts = dynamic(() => import('@/components/ui/AllProducts'), {
+  //   loading: () => <p>Loading...</p>,
+  //   ssr: false,
+  // })
 
   return (
     <div className="container-xl p-4 ">
@@ -46,8 +47,8 @@ const HomePage = ({ randomProducts, uniqueCategories }) => {
           </div>
         </div>
       </div>
-      <DynamicFeaturedCategory uniqueCategories={uniqueCategories} />
-      <DynamicAllProducts randomProducts={randomProducts} />
+      <FeaturedCategory uniqueCategories={uniqueCategories} />
+      <AllProducts randomProducts={randomProducts} />
     </div>
   );
 };
@@ -58,16 +59,37 @@ HomePage.getLayout = function getLayout(page) {
   return <RootLayouts>{page}</RootLayouts>;
 };
 
-export const getStaticProps = async () => {
-  const response = await fetch("http://localhost:3000/api/categories");
+// export const getStaticProps = async () => {
+//   const response = await fetch("https://tech-bd-electra51.vercel.app/api/categories");
+//   const data = await response.json();
+//   const randomProducts = getRandomProducts(data.data, 6);
+
+//   const response2 = await fetch(
+//     `https://tech-bd-electra51.vercel.app/api/categories?categories=1`
+//   );
+//   const data2 = await response2.json();
+//   const uniqueCategories = data2.data;
+
+//   return {
+//     props: {
+//       randomProducts,
+//       uniqueCategories,
+//     },
+//   };
+// };
+
+
+export async function getServerSideProps() {
+  const response = await fetch("https://tech-bd-electra51.vercel.app/api/categories");
   const data = await response.json();
   const randomProducts = getRandomProducts(data.data, 6);
 
   const response2 = await fetch(
-    `http://localhost:3000/api/categories?categories=1`
+    `https://tech-bd-electra51.vercel.app/api/categories?categories=1`
   );
   const data2 = await response2.json();
   const uniqueCategories = data2.data;
+
 
   return {
     props: {
@@ -75,4 +97,4 @@ export const getStaticProps = async () => {
       uniqueCategories,
     },
   };
-};
+}

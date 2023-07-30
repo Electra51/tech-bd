@@ -74,15 +74,29 @@ ProductsPage.getLayout = function getLayout(page) {
   return <RootLayouts>{page}</RootLayouts>;
 };
 //ssg
-export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:3000/api/categories");
-  const data = await res.json();
-  console.log(data)
+// export const getStaticProps = async () => {
+//   const res = await fetch("https://tech-bd-electra51.vercel.app/api/categories");
+//   const data = await res.json();
+//   console.log(data)
+
+//   return {
+//     props: {
+//       productsData: data.data,
+//     },
+//     revalidate: 30,
+//   };
+// };
+
+export async function getServerSideProps() {
+  const response = await fetch(
+    "https://tech-bd-electra51.vercel.app/api/categories"
+  );
+  const data = await response.json();
+
 
   return {
     props: {
       productsData: data.data,
     },
-    revalidate: 30,
   };
-};
+}

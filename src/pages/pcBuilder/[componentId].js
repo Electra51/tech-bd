@@ -99,7 +99,7 @@ Component.getLayout = function getLayout(page) {
 export async function getServerSideProps({ params }) {
   const { componentId } = params;
   const response = await fetch(
-    `http://localhost:3000/api/categories?category=${componentId}`
+    `https://tech-bd-electra51.vercel.app/api/categories?category=${componentId}`
   );
   const data = await response.json();
   const products = data.data;
