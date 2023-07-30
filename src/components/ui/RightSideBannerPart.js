@@ -32,7 +32,8 @@ const RightSideBannerPart = () => {
         }, 1000);
 
         return () => clearInterval(timer);
-    }, []);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [timeLeft, setTimeLeft]);
 
     const formatTime = (time) => {
         const days = Math.floor(time / (1000 * 60 * 60 * 24));

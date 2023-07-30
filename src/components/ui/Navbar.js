@@ -28,8 +28,8 @@ const Navbar = () => {
                                 <li><Link href='/keyboard'>KeyBoard</Link></li>
                             </ul>
                         </li>
-                        <li><Link href='/featured'>Featured</Link></li>
-                        <li><Link href='/about'>About</Link></li>
+                        <li><Link href='/products'>All Products</Link></li>
+                        <li><a href='#featured'>Featured</a></li>
                         <li><Link href='/contact'>Contact</Link></li>
                         <li>
                             <a><MdAccountCircle /> Account</a>
@@ -68,8 +68,8 @@ const Navbar = () => {
                             </ul>
                         </details>
                     </li>
-                    <li><Link href='/featured'>Featured</Link></li>
-                    <li><Link href='/about'>About</Link></li>
+                    <li><Link href='/products'>All Products</Link></li>
+                    <li><a href='#featured'>Featured</a></li>
                     <li><Link href='/contact'>Contact</Link></li>
                 </ul>
                 <ul className="menu menu-horizontal px-1">

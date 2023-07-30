@@ -6,7 +6,22 @@ import AllProducts from '@/components/ui/AllProducts'
 import RootLayouts from '@/components/layouts/RootLayouts'
 import { useGetProductsQuery } from '@/redux/api/api'
 
-const HomePage = ({ allProducts }) => {
+const getRandomProducts = (data, count) => {
+  const shuffledData = data.sort(() => 0.5 - Math.random());
+  return shuffledData.slice(0, count);
+};
+
+const HomePage = ({ randomProducts, uniqueCategories }) => {
+  // console.log('mk', uniqueCategories)
+  // Group products by category
+  const groupedProducts = randomProducts.reduce((acc, product) => {
+    const category = product.category;
+    if (!acc[category]) {
+      acc[category] = [];
+    }
+    acc[category].push(product);
+    return acc;
+  }, {});
 
   const { data, isLoading, isError, error } = useGetProductsQuery();
 
@@ -24,8 +39,14 @@ const HomePage = ({ allProducts }) => {
           </div>
         </div>
       </div>
-      <FeaturedCategory />
-      <AllProducts allProducts={allProducts} />
+      <FeaturedCategory uniqueCategories={uniqueCategories} />
+
+      <AllProducts randomProducts={randomProducts} />
+
+      {/* {randomProducts?.map((product) => (
+        console.log(product)
+        < AllProducts randomProducts ={product} key={product._id}></>
+      ))} */}
     </div>
   )
 }
@@ -36,14 +57,33 @@ HomePage.getLayout = function getLayout(page) {
   return <RootLayouts>{page}</RootLayouts>;
 };
 
+// export const getStaticProps = async () => {
+//   const res = await fetch("http://localhost:3000/api/categories");
+//   const data = await res.json();
+//   console.log(data);
+//   return {
+//     props: {
+//       allProducts: data.data
+//     },
+//     revalidate: 30,
+//   }
+// }
+
+
 export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:5000/products");
-  const data = await res.json();
-  console.log(data);
+  const response = await fetch("http://localhost:3000/api/categories");
+  const data = await response.json();
+  const randomProducts = getRandomProducts(data.data, 6);
+
+
+  const response2 = await fetch(`http://localhost:3000/api/categories?categories=1`)
+  const data2 = await response2.json();
+  const uniqueCategories = data2.data;
+
   return {
     props: {
-      allProducts: data
+      randomProducts,
+      uniqueCategories
     },
-    revalidate: 30,
-  }
-}
+  };
+};

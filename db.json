@@ -1,84 +1,821 @@
+
+  "products": [
+  {
+    "category_id":"64c5225b04d5bffcad8f040a",
+    "category_name": "RAM",
+    "image_url": "https://i.ibb.co/RHx7T15/4gb-1-500x500-removebg-preview.png",
+    "product_name": "HyperBoost XLR8 32GB",
+    "price": 129.99,
+    "rating": 4.7,
+    "rating_icon": "⭐⭐⭐⭐⭐",
+    "reviews": [
+      {
+      "review_id": 704,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Impressive memory, works great for video editing.",
+      "username": "VideoEditorPro"
+      },
+      {
+      "review_id": 705,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Fast and stable, but slightly expensive.",
+      "username": "TechGuru101"
+     },
+     {
+      "review_id": 706,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Best RAM I've used, highly recommended.",
+      "username": "PCMasterRaceElite"
+     }
+   ],
+   "status": "In stock",
+   "description": "The HyperBoost XLR8 32GB provides ample memory capacity for high-performance tasks like video editing and content creation.",
+   "brand": "HyperBoost",
+   "type": "DDR4",
+   "specifications": "32GB (2x16GB), 3600MHz, CL18",
+   "average_rating": 4.7
+},
+      
+{"category_id":"64c5225b04d5bffcad8f0408",
+        "category_name":"CPU",
+          "image_url": "https://i.ibb.co/X3Gg1tX/ryzen-5-pro-4650g-500x500-removebg-preview.png",
+          "product_name": "EliteCore i9-10000X",
+          "price": 1599.99,
+          "rating": 4.7,
+          "review": [
+            {
+              "review_id": 101,
+              "rating": 5,
+               "rating_icon": "⭐⭐⭐⭐⭐",
+              "comment": "Amazing processor! Great for gaming and video editing.",
+              "username": "Gamer123"
+            },
+            {
+              "review_id": 102,
+              "rating": 4,
+            "rating_icon": "⭐⭐⭐⭐",
+              "comment": "Fast and powerful, but a bit pricey.",
+              "username": "TechGuru87"
+            },
+            {
+              "review_id": 103,
+              "rating": 5,
+            "rating_icon": "⭐⭐⭐⭐⭐",
+              "comment": "Best CPU I've ever owned. Worth every penny!",
+              "username": "PCMasterRace"
+            }
+          ],
+          "status": "In stock",
+          "description": "The EliteCore i9-10000X is a high-end processor designed for gaming and heavy workloads. With 10 cores and 20 threads, it delivers blazing-fast speeds and smooth multitasking.",
+          "brand": "EliteCore",
+          "model": "i9-10000X",
+          "category_name":"CPU",
+          "type": "Desktop Processor",
+          "specifications": "10 cores, 20 threads, 3.5 GHz base clock, 5.2 GHz boost clock",
+          "voltage": "1.35V",
+          "average_rating": 4.7,
+          "individual_rating": 5
+        },
+
 {
-    "products": [
+    
+    "category_id":"64c5225b04d5bffcad8f040d",
+        "category_name": "Monitor",
+  "image_url": "https://i.ibb.co/yBsgjhC/lc27t550fdw-01-500x500-removebg-preview.png",
+  "product_name": "ViewMax 27-inch Gaming Monitor",
+  "price": 6299.99,
+  "rating": 4.5,
+  "rating_icon": "⭐⭐⭐⭐✩",
+  "reviews": [
+    {
+      "review_id": 1001,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Fantastic monitor with smooth gaming performance.",
+      "username": "GamingProX"
+    },
+    {
+      "review_id": 1002,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Good display quality, but could have more ports.",
+      "username": "TechEnthusiast456"
+    },
+    {
+      "review_id": 1003,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Impressive color accuracy and response time.",
+      "username": "ColorEnthusiast99"
+    }
+  ],
+  "status": "In stock",
+  "description": "The ViewMax 27-inch Gaming Monitor offers an immersive gaming experience with high-quality visuals.",
+  "brand": "ViewMax",
+  "type": "Gaming Monitor",
+  "specifications": "27-inch, 1440p, 144Hz refresh rate, 1ms response time",
+  "average_rating": 4.5
+},
         {
-            "id": "1",
-            "title": "Intel 10th Gen Core i3 10100F Processor",
-            "description": "This processor comes with a new breed that come without an integrated GPU, so a separate graphics card is required for its functionality. This new 10th gen Comet Lake microarchitecture is manufactured with the 14nm process that comes with four cores but lacks in HyperThreading. As this chip is updated to the latest BIOS revision, it nicely fits into any Intel 300-series motherboard. Focusing on this, all the major motherboard manufacturers have already started BIOS updates for their 300-series lineupIntel 10th Generation Core i3-10100F Processor having the base frequency of 3.60 GHz that can be reached as max turbo frequency at 4.30 GHz. It has the L3 SmartCache of 6 MB containing 4 cores and 8 threads. With the bus speed of 8 GT/s DMI3, it has thermal design power (TDP) rating of 65W. This latest microchip has few expansion options such 3.0 PCI express revision having configured up to 1x16, 2x8, 1x8+2x4 and maximum 16 lanes. Considering the memory this processor has dual channel of max 128 GB of size that supports up to DDR4-2666 bus speed.",
-            "status": "In Stock",
-            "rating": "5",
-            "category": "CPU",
-            "price": 8400,
-            "image_url": "/images/cpu.png"
+         "category_id":"64c5225b04d5bffcad8f0408",
+            "category_name":"CPU",
+          "image_url": "https://i.ibb.co/B2QJrKS/cpu.png",
+          "product_name": "Intel 10th Gen Core i3 10100F Processor",
+  "price": 2149.99,
+  "rating": 4.3,
+  "rating_icon": "⭐⭐⭐⭐✩",
+  "reviews": [
+    {
+      "review_id": 201,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Great budget CPU for everyday tasks and light gaming.",
+      "username": "BudgetGamer"
+    },
+    {
+      "review_id": 202,
+      "rating": 3,
+      "rating_icon": "⭐⭐⭐",
+      "comment": "Gets the job done but lacks some performance for heavier workloads.",
+      "username": "TechEnthusiast99"
+    },
+    {
+      "review_id": 203,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Amazing value for money, performs better than expected.",
+      "username": "ValueSeeker"
+    },
+    {
+      "review_id": 204,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Reliable processor for office work and web browsing.",
+      "username": "OfficeUser123"
+    },
+    {
+      "review_id": 205,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Good entry-level CPU for casual gaming and streaming.",
+      "username": "CasualGamer"
+    }
+  ],
+  "status": "Out of stock",
+  "description": "The Intel 10th Gen Core i3 10100F Processor is a budget-friendly CPU designed for everyday computing tasks and light gaming.",
+  "brand": "Intel",
+  "model": "Core i3 10100F",
+  "type": "Desktop Processor",
+  "specifications": "4 cores, 8 threads, 3.6 GHz base clock, 4.3 GHz boost clock",
+  "voltage": "1.25V",
+  "average_rating": 4.3
+},
+    {
+        "category_id":"64c5225b04d5bffcad8f040b",
+        "category_name": "Power Supply Unit",
+  "image_url": "https://i.ibb.co/PD8wSkc/sp750-01-500x500-removebg-preview.png",
+  "product_name": "TechPro Platinum 850W Power Supply",
+  "price": 179.99,
+  "rating": 4.8,
+  "rating_icon": "⭐⭐⭐⭐⭐",
+  "reviews": [
+    {
+      "review_id": 804,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Top-tier PSU, stable power output and silent operation.",
+      "username": "SilentBuilderX"
+    },
+    {
+      "review_id": 805,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Great PSU, but could use more PCIe connectors.",
+      "username": "GamerPro556"
+    },
+    {
+      "review_id": 806,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Premium quality PSU, worth the investment.",
+      "username": "TechEnthusiast789"
+    }
+  ],
+  "status": "In stock",
+  "description": "The TechPro Platinum 850W PSU offers high efficiency and premium performance for demanding setups.",
+  "brand": "TechPro",
+  "type": "ATX Power Supply",
+  "specifications": "850W, 80 Plus Platinum Certified, Fully Modular",
+  "average_rating": 4.8
+
+},
+  {"category_id":"64c5225b04d5bffcad8f0409",
+        "category_name": "Motherboard",
+          "image_url": "https://i.ibb.co/JxVn0bh/x570-taichi-razer-edition-1-500x500-removebg-preview.png",
+          "product_name": "MegaTech B550 Plus",
+           "price": 189.99,
+  "rating": 4.5,
+  "rating_icon": "⭐⭐⭐⭐✩",
+  "reviews": [
+    {
+      "review_id": 501,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Top-notch performance and value for money!",
+      "username": "BudgetBuilder101"
+    },
+    {
+      "review_id": 502,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Great mid-range motherboard, but limited fan headers.",
+      "username": "TechEnthusiast678"
+    },
+    {
+      "review_id": 503,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Stable and reliable for heavy workloads and gaming.",
+      "username": "HeavyGamerX"
+    },
+    {
+      "review_id": 504,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Good overall, but BIOS could be more user-friendly.",
+      "username": "PCBuilderPro"
+    },
+    {
+      "review_id": 505,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Excellent motherboard for Ryzen processors.",
+      "username": "RyzenMaster"
+    }
+  ],
+          "status": "In stock",
+          "description": "The MegaTech B550 Plus is a reliable and budget-friendly choice for mid-range builds. It offers good compatibility with a wide range of components.",
+          "brand": "MegaTech",
+          "model": "B550 Plus",
+          "type": "ATX Motherboard",
+          "specifications": "AM4 socket, AMD B550 chipset, DDR4 RAM support",
+          "voltage": "1.25V",
+          "average_rating": 4.7,
+          "individual_rating": [5, 4, 5, 4]
         },
         {
-            "id": "2",
-            "title": "1STPlayer PS-600AX Bronze Full Modular Power Supply",
-            "description": "1STPlayer PS-600AX Bronze Full Modular Power Supply is a 80 PLUS Bronze rated power supply, it has an upgraded performance with more powerful features. The DK 6.0 Full modular power supply gives maximum output capacity of 600W rated power and included with 12CM cooling fan , flat cable and full voltage output. The PS-600AX Power supply works with AC input power of 100-240V, with 47-63Hz frequency and 6.0A Max current capacity. With full range voltage and SCP function, when the power is cut off under abnormal condition. DK 5.0 will activate the power protection function to protect the PSU and motherboard effectively.1STPlayer PS-600AX Bronze Full Modular Power Supply comes with a modular design that can issue cable when upgrading GPU, multiple hard drives and case fans. Also, you can add/remove cable as their demand. Moreover, full modular design delivers a convenient cable management. Users can save space with flat cable that results in a nice-looking back routing.",
-            "status": "In Stock",
-            "rating": "3.6",
-            "category": "Power Supply Unit",
-            "price": 4700,
-            "image_url": "/images/power.png"
+        "category_id":"64c5225b04d5bffcad8f0408",
+           "category_name":"CPU",
+          "image_url": "https://i.ibb.co/3R5nd7y/ryzen-3-3200g-3-500x500-removebg-preview.png",
+          "product_name": "PowerMax Core i7-9700K",
+          "price": 1299.99,
+          "rating": 4.4,
+         "rating_icon": "⭐⭐⭐⭐⭐✩",
+  "reviews": [
+    {
+      "review_id": 301,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Excellent CPU for gaming and content creation.",
+      "username": "GamingPro27"
+    },
+    {
+      "review_id": 302,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Runs smooth and handles heavy tasks without a hitch.",
+      "username": "TechMaster55"
+    },
+    {
+      "review_id": 303,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Great CPU, but wish it had hyper-threading.",
+      "username": "PCEnthusiast101"
+    },
+    {
+      "review_id": 304,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Impressive performance and overclocking capabilities.",
+      "username": "OverclockerPro"
+    },
+    {
+      "review_id": 305,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Solid CPU for gaming, but could be more power-efficient.",
+      "username": "GamerGeek"
+    }
+  ],
+          "status": "In stock",
+          "description": "The PowerMax Core i7-9700K is a solid choice for gaming and everyday computing tasks. With 8 cores and 8 threads, it offers excellent performance and efficiency.",
+          "brand": "PowerMax",
+          "model": "Core i7-9700K",
+          "type": "Desktop Processor",
+          "specifications": "8 cores, 8 threads, 3.6 GHz base clock, 4.9 GHz boost clock",
+          "voltage": "1.25V",
+          "average_rating": 4.4,
+          "individual_rating": [4, 5, 4, 4]
         },
-        {
-            "id": "3",
-            "title": "ASRock H81M-VG4 R4.0 4th Gen Micro ATX Motherboard",
-            "description": "The ASRock H81M-VG4 R4.0 4th Gen Micro ATX Motherboard supports Intel 4th Generation Intel Core Processors (Socket 1150) and Dual Channel DDR3 1600. The Motherboard comes with 1 PCIe 2.0 x16, 1 PCIe 2.0 x1. It features a D-Sub port for graphic output. It is built with a High-Density Glass Fabric PCB design that reduces the gaps between the PCB layers to protect the motherboard against electrical shorts caused by humidity. This ASRock motherboard uses a Realtek gigabit LAN chip to support extremely fast internet connections. The ASRock H81M-VG4 R4.0 features a solid capacitor design. The motherboard offers full spike protection. It includes various technologies to prevent your motherboard’s components from being damaged by these unexpected voltage spikes. It also comes with ASRock Live Update & APP Shop. The ASRock H81M-VG4 R4.0 comes with 3 years of warranty.",
-            "status": "In Stock",
-            "rating": "4.5",
-            "category": "Motherboard",
-            "price": 8000,
-            "image_url": "/images/mo.png"
+   
+       {
+      "category_id":"64c5225b04d5bffcad8f0409",
+        "category_name": "Motherboard",
+          "image_url": "https://i.ibb.co/Y8vpsK4/b450m-hdv-r4-500x500-removebg-preview.png",
+          "product_name": "ProGamer Z590 Deluxe",
+          "price": 299.99,
+          "rating": 4.8,
+            "rating_icon": "⭐⭐⭐⭐⭐",
+  "reviews": [
+    {
+      "review_id": 401,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Outstanding motherboard with top-notch features!",
+      "username": "TechEnthusiast123"
+    },
+    {
+      "review_id": 402,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Great performance, but a bit on the expensive side.",
+      "username": "BudgetBuilder87"
+    },
+    {
+      "review_id": 403,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Well-built and reliable, perfect for gaming enthusiasts.",
+      "username": "GamerElite99"
+    },
+    {
+      "review_id": 404,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Solid motherboard, but lacks more USB ports.",
+      "username": "TechUser567"
+    },
+    {
+      "review_id": 405,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Impressive aesthetics and RGB lighting options.",
+      "username": "RGBMaster"
+    }
+  ],
+          "status": "In stock",
+          "description": "The ProGamer Z590 Deluxe is a feature-packed motherboard designed for gamers and enthusiasts. It offers excellent overclocking capabilities and stable performance.",
+          "brand": "ProGamer",
+          "model": "Z590 Deluxe",
+          "type": "ATX Motherboard",
+          "specifications": "LGA 1200 socket, Intel Z590 chipset, DDR4 RAM support",
+          "voltage": "1.2V",
+          "average_rating": 4.8,
+          "individual_rating": [5, 5, 4, 5]
         },
-        {
-            "id": "4",
-            "title": "HP EX900 M.2 1TB PCIe NVMe Internal SSD",
-            "description": "Revolutionize large file handling and response times with HP PCIe NVME TLC 1TB SSD M.2 Drive, a remarkably affordable and innovative PCIe-based NVMe memory SSD storage solution.Streamline your workflows Tackle large files and reduce your work time from hours to minutes with a solid state drive powered by M.2 PCIe NVMe technology.Budget-conscious innovation Access affordable high performance with a triple layer (TLC) architecture that stacks three cell layers on top of one another.",
-            "status": "Out of Stock",
-            "rating": "4.3",
-            "category": "Storage Device",
-            "price": 5320,
-            "image_url": "/images/ssd.png"
-        },
+
+      
+       
+         
          {
-            "id": "5",
-            "title": "Acer EB192Q 18.5 Inch HD Monitor",
-            "description": "Acer EB192Q Monitor comes with 18.5 Inch (1366x768) HD Backlit LED LCD Display. The Acer EB192Q featured this Comfy View display which prevents reflections to provide greater eye comfort and also on this LED-backlit display with the fine details with this full HD resolution. Here used LED technology and uses less energy, delivering up to 68% power savings. The horizontal viewing angle is 95 degrees while the vertical viewing angle is 65 degrees, Colour Support: 16.7 Million Colours, Panel Technology: Twisted Nematic Film (TN Film). This Acer EB192Q Monitor featured 95 degrees Horizontal Viewing Angle, 65 degrees Vertical Viewing Angle, TN Panel Technology, and -5 to 25 degrees Tilt Angle. The high resolution, rapid response time, and superior contrast ratio of this monitor make this series ideal for viewing heavy-duty media applications and movies with detailed precision and crisp images. In this Acer monitor, the Mercury-free LED backlight technology guarantees safe usage and environmental care. Here, LED technology also uses less energy and delivers up to 68% power savings. The latest Acer EB192Q Monitor offers 03 years warranty.",
-            "status": "In Stock",
-            "rating": "5",
-            "category": "Monitor",
-            "price": 8399,
-            "image_url": "/images/pc.png"
+            "category_id":"64c5225b04d5bffcad8f040a",
+        "category_name": "RAM",
+  "image_url": "https://i.ibb.co/k94hBzd/twist-001-500x500-removebg-preview.png",
+  "product_name": "UltraSpeed DDR4 8GB",
+  "price": 49.99,
+  "rating": 4.2,
+  "rating_icon": "⭐⭐⭐⭐✩",
+  "reviews": [
+    {
+      "review_id": 707,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Affordable and decent performance for everyday use.",
+      "username": "BudgetUser567"
+    },
+    {
+      "review_id": 708,
+      "rating": 3,
+      "rating_icon": "⭐⭐⭐",
+      "comment": "Basic RAM, works fine but nothing exceptional.",
+      "username": "CasualUser101"
+    },
+    {
+      "review_id": 709,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Great value, especially for budget builds.",
+      "username": "PCBuilderRookie"
+    }
+  ],
+  "status": "In stock",
+  "description": "The UltraSpeed DDR4 8GB offers affordable and reliable memory for standard computing tasks.",
+  "brand": "UltraSpeed",
+  "type": "DDR4",
+  "specifications": "8GB (1x8GB), 2666MHz, CL16",
+  "average_rating": 4.2
+},
+{
+    "category_id":"64c5225b04d5bffcad8f040c",
+        "category_name": "Storage Device",
+  "image_url": "https://i.ibb.co/Jy5QrCr/barracuda-q5-1tb-01-500x500-removebg-preview.png",
+  "product_name": "DataVault HDD 2TB",
+  "price": 779.99,
+  "rating": 4.3,
+  "rating_icon": "⭐⭐⭐⭐✩",
+  "reviews": [
+    {
+      "review_id": 907,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Decent storage for backups and media files.",
+      "username": "CasualUser123"
+    },
+    {
+      "review_id": 908,
+      "rating": 3,
+      "rating_icon": "⭐⭐⭐",
+      "comment": "Average performance, could be faster for larger files.",
+      "username": "TechReviewer2022"
+    },
+    {
+      "review_id": 909,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Reliable HDD for a NAS setup, runs quiet.",
+      "username": "NASUser567"
+    }
+  ],
+  "status": "In stock",
+  "description": "The DataVault HDD 2TB offers spacious and reliable storage for data backups and media files.",
+  "brand": "DataVault",
+  "type": "Hard Disk Drive (HDD)",
+  "specifications": "2TB, 3.5-inch, 7200 RPM, SATA III",
+  "average_rating": 4.3
+},
+ {"category_id":"64c5225b04d5bffcad8f0409",
+        "category_name": "Motherboard",
+          "image_url": "https://i.ibb.co/yXXSbFZ/b450m-steel-legend-500x500-removebg-preview.png",
+          "product_name": "SpeedStar B450 Elite",
+           "price": 129.99,
+  "rating": 4.2,
+  "rating_icon": "⭐⭐⭐⭐✩",
+  "reviews": [
+    {
+      "review_id": 601,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Affordable and reliable motherboard for Ryzen CPUs.",
+      "username": "RyzenUser123"
+    },
+    {
+      "review_id": 602,
+      "rating": 3,
+      "rating_icon": "⭐⭐⭐",
+      "comment": "Decent performance, but lacks some advanced features.",
+      "username": "TechGeek2022"
+    },
+    {
+      "review_id": 603,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Solid build quality and easy to set up.",
+      "username": "CasualBuilder"
+    },
+    {
+      "review_id": 604,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Great value for a budget gaming PC.",
+      "username": "BudgetGamer87"
+    },
+    {
+      "review_id": 605,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Reliable and stable for everyday computing tasks.",
+      "username": "EverydayUser"
+    }
+  ],
+          "status": "Out of stock",
+          "description": "The SpeedStar B450 Elite is a budget-friendly motherboard suitable for entry-level users. It offers stable performance for basic computing needs.",
+          "brand": "SpeedStar",
+          "model": "B450 Elite",
+          "type": "Micro ATX Motherboard",
+          "specifications": "AM4 socket, AMD B450 chipset, DDR4 RAM support",
+          "voltage": "1.2V",
+          "average_rating": 4.4,
+          "individual_rating": [4, 5, 4, 4]
         },
-         {
-            "id": "6",
-            "title": "Logitech B100 Optical USB Mouse",
-            "description": "Logitech B100 Optical USB MouseAn office basic with built-in quality.-- Comfort in hand Left-handed or right, you can work comfortably all day long with this ambidextrous mouse.Smooth operator Youâ€™re in control with smooth, responsive optical tracking that moves the cursor just where you want it.Ready in no time This plug-and-play mouse is simple to set upâ€”you just plug it in to your USB and get back to business.03 Years Warranty",
-            "rating": "5",
-            "status": "In Stock",
-            "category": "Mouse",
-            "price": 390,
-            "image_url": "/images/mouse.png"
-        },
-         {
-            "id": "7",
-            "title": "New Study Reveals Benefits of Regular Exercise",
-            "description": "ADATA DDR4 module provides the highest quality and the fastest performance. The Premier DDR4 3200 SO-DIMM memory modules for notebooks arrive in convenient 16GB for instant upgrades on any compatible notebook. They deliver faster data transfers than DDR3, coupled with lower energy consumption that reduces heat and extends battery life. Our DDR4 is also optimized to unlock the power of the newest Intel/AMD processors.",
-            "status": "Out of Stock",
-            "rating": "5",
-            "category": "RAM",
-            "price": 9100,
-            "image_url": "/images/ram.png"
-        },
-         {
-            "id": "8",
-            "title": "Fantech MAXFIT87 MK856 Red Switch RGB Mechanical Keyboard",
-            "description": "Fantech MAXFIT87 MK856 RGB Mechanical Keyboard comes with Red Switch, TKL Factor + media keys, Side Panel RGB, Detachable Type-C Cable RGB Backlighting. This Mechanical keybord featured with Switch Lifetime: 50 million clicks, Total Keys: 87, Anti-ghosting: Full keys, 22 modes Illumination RGB, that enhance your gaming experience. This Keyboard will Truly lighten up your gaming with MAXFIT87â€™s side panel RGB and Illuminate your desk. It is designed with Keycaps: Double-injection, Core Construction: ABS Plastic, Polling Rate: 1000Hz, Weight: 794gr without cable, To ensures that every single key you press registers simultaneously and accurately in-game. The MAXFIT87 Mechanical Keyboard features full featured keys at a streamlined size, perfect for anyone who wants to easily access any key or command on-the-fly while keeping their desk space. Including 4 additional media keys for even more accessibility. This new Fantech MAXFIT87 MK856 compatible with Windows and Mac OS X operating system and USB Port Required. This Lastest stylish Fantech MAXFIT87 MK856 has 01 year warranty.",
-            "status": "Out of Stock",
-            "rating": "4.5",
-            "category": "Keyboard",
-            "price": 3895,
-            "image_url": "/images/keyboard.png"
-        }
-    ]
+{
+    "category_id":"64c5225b04d5bffcad8f040a",
+        "category_name": "RAM",
+  "image_url": "https://i.ibb.co/X7rVFFT/single-ddr4-2666-500x500-removebg-preview.png",
+  "product_name": "SpeedyRAM DDR4 16GB",
+  "price": 79.99,
+  "rating": 4.5,
+  "rating_icon": "⭐⭐⭐⭐✩",
+  "reviews": [
+    {
+      "review_id": 701,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Fast and reliable memory, perfect for gaming.",
+      "username": "GamerPro555"
+    },
+    {
+      "review_id": 702,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Good performance, but could use better heat spreaders.",
+      "username": "TechEnthusiast789"
+    },
+    {
+      "review_id": 703,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Excellent RAM for multitasking and heavy workloads.",
+      "username": "ProDesigner123"
+    }
+  ],
+  "status": "In stock",
+  "description": "The SpeedyRAM DDR4 16GB offers fast and reliable performance for gaming and professional applications.",
+  "brand": "SpeedyRAM",
+  "type": "DDR4",
+  "specifications": "16GB (2x8GB), 3200MHz, CL16",
+  "average_rating": 4.5
+},
+{"category_id":"64c5225b04d5bffcad8f040b",
+        "category_name": "Power Supply Unit",
+  "image_url": "https://i.ibb.co/X2dgMvY/4.png",
+  "product_name": "PowerMax Gold 750W Power Supply",
+  "price": 129.99,
+  "rating": 4.6,
+  "rating_icon": "⭐⭐⭐⭐⭐✩",
+  "reviews": [
+    {
+      "review_id": 801,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Very reliable and efficient PSU, highly recommended!",
+      "username": "PCEnthusiastX"
+    },
+    {
+      "review_id": 802,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Good performance, but wish the cables were longer.",
+      "username": "TechGuru101"
+    },
+    {
+      "review_id": 803,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Excellent power supply, handles overclocking well.",
+      "username": "OverclockMaster"
+    }
+  ],
+  "status": "In stock",
+  "description": "The PowerMax Gold 750W PSU delivers reliable and efficient power for high-performance systems.",
+  "brand": "PowerMax",
+  "type": "ATX Power Supply",
+  "specifications": "750W, 80 Plus Gold Certified, Fully Modular",
+  "average_rating": 4.6
+},
+{
+     "category_id":"64c5225b04d5bffcad8f040c",
+        "category_name": "Storage Device",
+  "image_url": "https://i.ibb.co/rsy9tPg/ex900-500x500-removebg-preview.png",
+  "product_name": "TechBoost NVMe 1TB SSD",
+  "price": 149.99,
+  "rating": 4.9,
+  "rating_icon": "⭐⭐⭐⭐⭐",
+  "reviews": [
+    {
+      "review_id": 904,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Insanely fast storage, perfect for high-end workstations.",
+      "username": "ProDesignerX"
+    },
+    {
+      "review_id": 905,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Great NVMe SSD, but a bit pricey compared to SATA.",
+      "username": "TechEnthusiast789"
+    },
+    {
+      "review_id": 906,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Fast and reliable, highly recommended for gaming.",
+      "username": "GamingPro456"
+    }
+  ],
+  "status": "In stock",
+  "description": "The TechBoost NVMe 1TB SSD delivers lightning-fast storage performance for demanding tasks.",
+  "brand": "TechBoost",
+  "type": "NVMe SSD",
+  "specifications": "1TB, M.2 2280, PCIe Gen3 x4, Read Speed: 3500MB/s, Write Speed: 3000MB/s",
+  "average_rating": 4.9
+},
+
+{
+  "category_id":"64c5225b04d5bffcad8f040b",
+        "category_name": "Power Supply Unit",
+  "image_url": "https://i.ibb.co/wpyRWmV/smart-bm2-550w-500x500-removebg-preview.png",
+  "product_name": "EcoPower Bronze 600W Power Supply",
+  "price": 69.99,
+  "rating": 4.2,
+  "rating_icon": "⭐⭐⭐⭐✩",
+  "reviews": [
+    {
+      "review_id": 807,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Affordable PSU, gets the job done for basic builds.",
+      "username": "BudgetBuilder101"
+    },
+    {
+      "review_id": 808,
+      "rating": 3,
+      "rating_icon": "⭐⭐⭐",
+      "comment": "Decent power supply, but could be quieter under load.",
+      "username": "QuietPCUser"
+    },
+    {
+      "review_id": 809,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Great value for a mid-range gaming PC.",
+      "username": "CasualGamer87"
+    }
+  ],
+  "status": "In stock",
+  "description": "The EcoPower Bronze 600W PSU is a budget-friendly choice for standard computing and gaming setups.",
+  "brand": "EcoPower",
+  "type": "ATX Power Supply",
+  "specifications": "600W, 80 Plus Bronze Certified, Non-Modular",
+  "average_rating": 4.2
+},
+{
+     "category_id":"64c5225b04d5bffcad8f040d",
+        "category_name": "Monitor",
+  "image_url": "https://i.ibb.co/Kxnh0dS/l24i-30-01-500x500-removebg-preview.png",
+  "product_name": "SuperView 32-inch Curved Monitor",
+  "price": 249.99,
+  "rating": 4.3,
+  "rating_icon": "⭐⭐⭐⭐✩",
+  "reviews": [
+    {
+      "review_id": 1007,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Good monitor, but I expected deeper curve.",
+      "username": "CurvedMonitorFan"
+    },
+    {
+      "review_id": 1008,
+      "rating": 3,
+      "rating_icon": "⭐⭐⭐",
+      "comment": "Decent image quality, but brightness could be higher.",
+      "username": "TechReviewer2022"
+    },
+    {
+      "review_id": 1009,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Excellent immersive experience with the curved display.",
+      "username": "GamerPro456"
+    }
+  ],
+  "status": "In stock",
+  "description": "The SuperView 32-inch Curved Monitor provides an immersive viewing experience with its curved display.",
+  "brand": "SuperView",
+  "type": "Curved Monitor",
+  "specifications": "32-inch, 1080p, 60Hz refresh rate, 4ms response time",
+  "average_rating": 4.3
 }
+{
+    "category_id":"64c5225b04d5bffcad8f040c",
+        "category_name": "Storage Device",
+  "image_url": "https://i.ibb.co/3WtCvFH/e800-01-500x500-removebg-preview.png",
+  "product_name": "SpeedStar SSD 500GB",
+  "price": 79.99,
+  "rating": 4.7,
+  "rating_icon": "⭐⭐⭐⭐⭐",
+  "reviews": [
+    {
+      "review_id": 901,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Blazing fast storage, great for OS and applications.",
+      "username": "SpeedDemonX"
+    },
+    {
+      "review_id": 902,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Solid SSD, but could use a larger capacity option.",
+      "username": "TechGuru101"
+    },
+    {
+      "review_id": 903,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Excellent value for the performance it delivers.",
+      "username": "ValueSeeker99"
+    }
+  ],
+  "status": "In stock",
+  "description": "The SpeedStar SSD 500GB offers fast and reliable storage for your data and applications.",
+  "brand": "SpeedStar",
+  "type": "Solid State Drive (SSD)",
+  "specifications": "500GB, SATA III, Read Speed: 550MB/s, Write Speed: 520MB/s",
+  "average_rating": 4.7
+},
+
+
+
+{
+     "category_id":"64c5225b04d5bffcad8f040d",
+        "category_name": "Monitor",
+  "image_url": "https://i.ibb.co/gVBnyGW/lg-22mp400-b-01-500x500-removebg-preview.png",
+  "product_name": "TechVision 24-inch IPS Monitor",
+  "price": 179.99,
+  "rating": 4.8,
+  "rating_icon": "⭐⭐⭐⭐⭐",
+  "reviews": [
+    {
+      "review_id": 1004,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Beautiful IPS display, perfect for content creation.",
+      "username": "ContentCreatorPro"
+    },
+    {
+      "review_id": 1005,
+      "rating": 4,
+      "rating_icon": "⭐⭐⭐⭐",
+      "comment": "Great monitor, but the stand could be more adjustable.",
+      "username": "TechEnthusiast789"
+    },
+    {
+      "review_id": 1006,
+      "rating": 5,
+      "rating_icon": "⭐⭐⭐⭐⭐",
+      "comment": "Excellent color reproduction and wide viewing angles.",
+      "username": "ColorEnthusiast123"
+    }
+  ],
+  "status": "In stock",
+  "description": "The TechVision 24-inch IPS Monitor delivers stunning visuals and accurate colors for creative work.",
+  "brand": "TechVision",
+  "type": "IPS Monitor",
+  "specifications": "24-inch, 1080p, 75Hz refresh rate, 5ms response time",
+  "average_rating": 4.8
+},
+
+]
+        
+    
+
+  "categories":[
+    {
+      "category_id": 1,
+      "category_name": "CPU",
+      "img": "https://i.ibb.co/sC3CfTt/1.png"
+    },
+    {
+     "category_id": 2,
+      "category_name": "Motherboard",
+      "img": "https://i.ibb.co/QJR9Lky/3.png"
+    }
+    , {
+      "category_id": 3,
+      "category_name": "RAM",
+      "img": "https://i.ibb.co/x785n5P/5.png"
+    }
+    ,
+     {
+     "category_id": 4,
+      "category_name": "Power Supply Unit",
+      "img": "https://i.ibb.co/X2dgMvY/4.png"
+    },
+     {
+     "category_id": 5,
+      "category_name": "Storage Device",
+      "img": "https://i.ibb.co/p2GmcT8/6.png"
+    },
+     {
+     "category_id": 6,
+      "category_name": "Monitor",
+      "img": "https://i.ibb.co/WHZYxPm/2.png"
+    }
+  ]
+
